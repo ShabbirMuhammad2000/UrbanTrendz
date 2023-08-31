@@ -1,11 +1,20 @@
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavigationMenu from './Navigation-Menu/Navigation-Menu.js'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        
-    </div>
+      <Router>
+        <div className='Navigation'>
+        {/* Render Navigation Menu */}
+          <NavigationMenu />  
+          <Switch>
+            {/* Define Routes */}
+
+          </Switch>
+        </div>
+      </Router>
   );
 }
 
